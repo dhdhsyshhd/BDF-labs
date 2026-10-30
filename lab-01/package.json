@@ -1,0 +1,15 @@
+{
+  "name": "lab-01",
+  "version": "1.0.0",
+  "description": "Lab 1: Node.js and Express Server - Talakonda Bharath (252U1R9156)",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "server": "node server.js"
+  },
+  "author": "Talakonda Bharath",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
