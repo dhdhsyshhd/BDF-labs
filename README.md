@@ -12,10 +12,10 @@ Backend Development Fundamentals Lab Submissions
 
 ## Course Labs Directory
 
-| Lab Number | Title | Directory | Status |
+| Lab Number | Title | LIVE | Status |
 | :--- | :--- | :--- | :--- |
-| **Lab 01** | Node.js and Express Server | [`lab-01/`](./lab-01/) | Completed |
-| **Lab 02** | SQLite Database and CRUD Operations | [`lab-02/`](./lab-02/) | Completed |
+| **Lab 01** | Node.js and Express Server |[ [`(https://lab-02-lyart.vercel.app/) | Completed |
+| **Lab 02** | SQLite Database and CRUD Operations | (https://lab-02-lyart.vercel.app/) | Completed |
 
 ---
 
