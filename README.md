@@ -14,9 +14,9 @@ Backend Development Fundamentals Lab Submissions
 
 | Lab Number | Title | LIVE | Status |
 | :--- | :--- | :--- | :--- |
-| **Lab 01** | Node.js and Express Server |[(https://lab-02-lyart.vercel.app/) | Completed |
-| **Lab 02** | SQLite Database and CRUD Operations | (https://lab-02-lyart.vercel.app/) | Completed |
-
+| **Lab 01** | Node.js and Express Server |https://lab-02-lyart.vercel.app/about | Completed |
+| **Lab 02** | SQLite Database and CRUD Operations | (https://lab-02-lyart.vercel.app/books/) | Completed |
+/
 ---
 
 ## Lab Summaries
