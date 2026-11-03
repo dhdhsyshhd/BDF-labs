@@ -206,6 +206,48 @@ async function runTests() {
     }, "{ broken json ");
     assert("24. Malformed JSON request body returns 400", res.statusCode === 400 && res.body.message === "Invalid JSON payload");
 
+    // 25. GET /books?offset=-2 (400)
+    res = await request({ hostname: "localhost", port: 3000, path: "/books?offset=-2", method: "GET" });
+    assert("25. GET with negative offset returns 400", res.statusCode === 400 && res.body.message.includes("offset"));
+
+    // 26. GET /books?min_price=-50 (400)
+    res = await request({ hostname: "localhost", port: 3000, path: "/books?min_price=-50", method: "GET" });
+    assert("26. GET with negative min_price returns 400", res.statusCode === 400 && res.body.message.includes("min_price"));
+
+    // 27. GET /books?max_price=invalid (400)
+    res = await request({ hostname: "localhost", port: 3000, path: "/books?max_price=invalid", method: "GET" });
+    assert("27. GET with non-numeric max_price returns 400", res.statusCode === 400 && res.body.message.includes("max_price"));
+
+    // 28. PUT /books/1 with missing title (400)
+    res = await request({
+        hostname: "localhost",
+        port: 3000,
+        path: "/books/1",
+        method: "PUT",
+        headers: { "Content-Type": "application/json" }
+    }, { author: "Author", price: 250 });
+    assert("28. PUT /books/1 missing title returns 400", res.statusCode === 400 && res.body.message.includes("Title"));
+
+    // 29. PUT /books/1 with negative price (400)
+    res = await request({
+        hostname: "localhost",
+        port: 3000,
+        path: "/books/1",
+        method: "PUT",
+        headers: { "Content-Type": "application/json" }
+    }, { title: "Valid Title", author: "Author", price: -10 });
+    assert("29. PUT /books/1 negative price returns 400", res.statusCode === 400 && res.body.message.includes("Price"));
+
+    // 30. GET /unknown-endpoint returns 404
+    res = await request({
+        hostname: "localhost",
+        port: 3000,
+        path: "/unknown-endpoint",
+        method: "GET",
+        headers: { "Accept": "application/json" }
+    });
+    assert("30. GET /unknown-endpoint returns 404 Route not found", res.statusCode === 404 && res.body.message === "Route not found");
+
     console.log(`\nTests Completed: ${passed} passed, ${failed} failed.`);
     process.exit(failed > 0 ? 1 : 0);
 }

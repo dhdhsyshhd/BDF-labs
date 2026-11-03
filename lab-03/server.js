@@ -618,7 +618,8 @@ app.get(["/books", "/books/"], async (req, res) => {
 
         // Retrieve total count for headers
         const countQuery = `SELECT COUNT(*) AS total FROM book ${whereClause};`;
-        const countParams = params.slice(0, conditions.length === 2 && parsedMinPrice !== null && parsedMaxPrice !== null ? params.length - 2 : params.length - 2);
+        const countParams = params.slice(0, -2);
+        res.setHeader("Access-Control-Expose-Headers", "X-Total-Count");
         const countRow = await db.get(countQuery, countParams);
         if (countRow) {
             res.setHeader("X-Total-Count", countRow.total);

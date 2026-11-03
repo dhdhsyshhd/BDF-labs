@@ -16,7 +16,7 @@ Backend Development Fundamentals Lab Submissions (Year II, Term II, Aurora)
 | :--- | :--- | :--- | :--- | :--- |
 | **Lab 01** | Node.js and Express Server | [`lab-01/`](./lab-01/) | [Live Route](https://lab-02-lyart.vercel.app/about) | Completed |
 | **Lab 02** | SQLite Database and CRUD Operations | [`lab-02/`](./lab-02/) | [Live Route](https://lab-02-lyart.vercel.app/books/) | Completed |
-| **Lab 03** | REST API, Query Parameters & Validation | [`lab-03/`](./lab-03/) / [`lab-3/`](./lab-3/) | [Live Route](https://lab-02-lyart.vercel.app/) | Completed |
+| **Lab 03** | REST API, Query Parameters & Validation | [`lab-03/`](./lab-03/) | [Live Route](https://lab-02-lyart.vercel.app/) | Completed |
 | **Lab 04** | Upcoming Lab 4 | [`lab-04/`](./lab-04/) | Pending | Upcoming |
 | **Lab 05** | Upcoming Lab 5 | [`lab-05/`](./lab-05/) | Pending | Upcoming |
 | **Lab 06** | Upcoming Lab 6 | [`lab-06/`](./lab-06/) | Pending | Upcoming |
@@ -49,4 +49,4 @@ Connects an Express.js server with an SQLite database (`bookStore.db`) and imple
 Implements an advanced RESTful Books API with query parameter filtering (`search_q`, `order_by`, `order`, `min_price`, `max_price`, `limit`, `offset`), robust request validation (`400 Bad Request`), standard status codes, systematic debugging fixes (`EADDRINUSE`, imports, schema, `async/await`), and an interactive web dashboard.
 
 * **Technologies Used:** Node.js, Express.js, SQLite, sqlite3, sqlite, cors, Postman, JavaScript
-* **Documentation:** [View Lab 3 README](./lab-03/README.md) · [View Alternative Folder](./lab-3/README.md)
+* **Documentation:** [View Lab 3 README](./lab-03/README.md)

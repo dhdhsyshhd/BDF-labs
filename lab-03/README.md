@@ -64,7 +64,7 @@ lab-03/
 ├── package-lock.json          # Dependency lockfile
 ├── postman_collection.json    # Complete Postman v2.1.0 test suite
 ├── server.js                  # Main Express REST API and frontend server
-├── test_api.js                # Automated verification script (24 tests)
+├── test_api.js                # Automated verification script (30 tests)
 └── README.md                  # Comprehensive Lab 03 documentation
 ```
 
