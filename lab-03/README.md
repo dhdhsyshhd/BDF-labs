@@ -12,7 +12,7 @@
 
 * **Live Deployment Base:** [https://lab-02-lyart.vercel.app](https://lab-02-lyart.vercel.app)
 * **Lab 01 Submission:** [View Lab 1 README](../lab-01/README.md) · [Live Route](https://lab-02-lyart.vercel.app/about)
-* **Lab 02 Submission:** [View Lab 2 README](../lab-02/README.md) · [Live Route](https://lab-02-lyart.vercel.app/books/)
+* **Lab 02 Submission:** [View Lab 2 README](../lab-02/README.md) · [Live Route](https://lab-03-iota.vercel.app/books?order_by=price&order=ASC)
 * **Lab 03 Deployment Status:** Ready for production deployment on Vercel / Render / Railway (Local development & test verification 100% completed).
 
 ---
