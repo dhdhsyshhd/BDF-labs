@@ -148,11 +148,7 @@ http://localhost:3000/
 
 ---
 
-## Interactive Web Dashboard (`GET /`)
-
-Accessing `/` in a browser renders an integrated web dashboard connecting student information, SQLite records, real-time search, sorting, filtering, and pagination:
-
-![Interactive Dashboard](screenshots/dashboard.png)
+#
 
 ---
 
